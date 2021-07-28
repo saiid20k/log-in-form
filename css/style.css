@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    /* Small */
+@media (min-width: 768px) {
+.container {
+    width: 750px;
+}
+}
+/* Medium */
+@media (min-width: 992px) {
+.container {
+    width: 970px;
+}
+}
+/* Large */
+@media (min-width: 1200px) {
+.container {
+    width: 1170px;
+}
+}
+
+
+
+.container .box{
+    min-height: 95vh;
+    width: 33%;
+    border: 1px solid #000;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+@media (max-width: 991px) {
+.container .box{
+    width: 80%;
+    max-width: 100% !important;
+}
+}
+@media (max-width: 767px) {
+    .container .box{
+        width: 100%;
+        max-width: 100% !important;
+    }
+}
+.container .box .img{
+     height: 200px;
+     width: 100%;
+     background-image: url(../images/3.png);
+     background-repeat: no-repeat;
+     background-position: right;
+}
+.container .box .text{ 
+    margin-top: 20px;
+    text-align: center;
+}
+.container .box .text h2{
+    font-size: 60px;
+    letter-spacing: 9px;
+    font-family: cursive;
+    user-select: none;
+}
+.container .box .text h2 span{
+    color: #0bbc6b;
+    border-bottom: 4px solid #0bbc6b;
+}
+.container .box .text input{
+    height: 40px;
+    width: 90%;
+    padding-left: 15px;
+    background: #f0f1f5;
+    border: none;
+    outline: none;
+}
+.container .box .text input:focus{
+    border: 1px solid #34ff34;
+    box-shadow: 0px 0px 5px 0px #34ff34;
+    transition: .3s;
+}
+.container .box .text button{
+    margin-top: 25px;
+    padding: 7px 40px;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px
+}
+.container .box .text button:hover{
+    background: #000;
+    color: #FFF;
+    transition: .5s;
+}
+.container .box .text p{
+    font-size: 16px;
+    font-family: system-ui;
+}
+.container .box .text p span{
+    font-weight: bold;
+    cursor: pointer;
+}
+.container .box .text a{
+    text-decoration: none;
+    font-family: serif;
+    font-size: 14px;
+}
+
+.bottom{
+    height: 111px;
+    margin-top: 40px;
+    width: 100%;
+    background-image: url(../images/4.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -10;
+    position: absolute;
+    right: 0px;
+    transform: rotate(
+-180deg
+);
+    bottom: -2px;
+}
